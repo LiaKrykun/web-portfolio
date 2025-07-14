@@ -1,0 +1,88 @@
+.prj-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 10rem 0;
+}
+.prj-page-container h2{
+    font-size: 3rem;
+}
+
+.pj-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 65vw;
+    gap: 5vw;
+}
+
+.prj-page-img{
+    max-width: 30vw;
+}
+
+.pj-container-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.prj-page-btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.prj-page-btns button{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: rgba(74, 74, 74, 0.294);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3rem;
+    transition: .5s ease-in-out;
+}
+
+.prj-page-btns button:hover{
+   background: linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+}
+
+@media(max-width:768px){
+    .pj-container img {
+        height: 100%;
+    }
+
+    .prj-page-container{
+        margin: 4rem 0;
+    }
+    .pj-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prj-page-img{
+        max-width: 60vw;
+    }
+
+}
+
+@media(max-width:440px){
+    .prj-page-container h2{
+        font-size: 2.3rem;
+    }
+    .prj-page-img{
+        max-width: 80vw;
+    }
+    .pj-container-right{
+        font-size: 1.1rem;
+    }
+    .prj-page-btns{
+        gap: 1rem;
+    }
+    .prj-page-btns button{
+        font-size: 1rem;
+    }
+}
