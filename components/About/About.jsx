@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Magnet from "../Magnet/Magnet";
 
 function About() {
   return (
@@ -22,9 +23,11 @@ function About() {
               user-centered digital experiences.
             </p>
 
-            <a href="/files/resume.pdf" download className="resume">
-              <button className="resume-btn">Resume</button>
-            </a>
+            <Magnet padding={50} disabled={false} magnetStrength={50}>
+              <a href="/files/resume.pdf" download className="resume">
+                <button className="resume-btn">Resume</button>
+              </a>
+            </Magnet>
           </div>
         </div>
         <div className="about-right">

@@ -46,25 +46,14 @@ function Navbar() {
               color: "white",
             },
           }}
-          component="a"
-          href="#hero"
         >
           <BottomNavigationAction
             label="Home"
             icon={<HomeIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
-            component={Link}
-            to="hero"
-            spy={true}
-            smooth={true}
-            duration={500}
           />
           <BottomNavigationAction
             label="About"
             icon={<AccountCircleIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
-            component={Link}
-            to="about"
-            smooth={true}
-            duration={500}
           />
           <BottomNavigationAction
             label="Projects"
