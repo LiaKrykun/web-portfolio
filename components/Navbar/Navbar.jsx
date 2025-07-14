@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import { useNavigate } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
@@ -14,6 +15,11 @@ import logoDark from "../../assets/logo-dark.png";
 
 function Navbar({ isDark }) {
   const [value, setValue] = React.useState(0);
+  const navigate = useNavigate();
+
+  const handleNavClick = (hash) => {
+    navigate("/" + hash);
+  };
   return (
     <div className="navbar">
       <Link to="/">
@@ -50,14 +56,17 @@ function Navbar({ isDark }) {
         >
           <BottomNavigationAction
             label="Home"
+            onClick={() => navigate("/")}
             icon={<HomeIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
           <BottomNavigationAction
             label="About"
+            onClick={() => handleNavClick("#about")}
             icon={<AccountCircleIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
           <BottomNavigationAction
             label="Projects"
+            onClick={() => handleNavClick("#projects")}
             icon={
               <BusinessCenterRoundedIcon
                 sx={{ fontSize: 28, color: "#ffffff" }}
@@ -66,6 +75,7 @@ function Navbar({ isDark }) {
           />
           <BottomNavigationAction
             label="Contact"
+            onClick={() => handleNavClick("#contact")}
             icon={<TelegramIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
         </BottomNavigation>

@@ -64,8 +64,8 @@
 
 @media(max-width:420px){
     .hero{
-        padding: 2rem 0 10rem;
-        height: 80vh;
+        padding: 1rem 0 10rem;
+        height: 60vh;
     }
     .hero h1{
         font-size:1.3rem;

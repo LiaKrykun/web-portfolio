@@ -137,7 +137,7 @@
 
 @media(max-width:440px){
     .contact-title{
-        margin-top: 3rem;
+        margin-top: 0;
     }
     .contact-right{
         margin: 2rem 0;

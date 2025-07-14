@@ -107,9 +107,6 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <p>2025 Lia Krykun</p>
-        <p>
-          <a href="https://lordicon.com/">Icons by Lordicon.com</a>
-        </p>
       </div>
     </div>
   );

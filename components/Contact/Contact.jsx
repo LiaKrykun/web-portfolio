@@ -11,9 +11,8 @@ function Contact() {
         <div className="contact-left">
           <h2>Lets talk!</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-            eaque enim cupiditate iusto? Maiores accusamus possimus ullam
-            officia dolorem rem.
+            Whether it's about design, development, or just a creative
+            conversation — I'm here and excited to connect.
           </p>
         </div>
         <form className="contact-right">

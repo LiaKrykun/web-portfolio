@@ -12,7 +12,7 @@ function Projects() {
       <div className="projects-container">
         {projects.map((pj, index) => {
           return (
-            <div className="pj-container">
+            <div className="pj-container" key={pj.pj_num || index}>
               <div className="single-project">
                 <Link to={`/project/${pj.pj_num}`}>
                   <img key={index} src={pj.pj_img} alt="" />

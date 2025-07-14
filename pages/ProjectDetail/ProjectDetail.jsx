@@ -8,10 +8,10 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const [prj, setPrj] = useState(null);
   const openWebsite = () => {
-    window.open(prj.pj_url, "_blank");
+    window.open(prj.pj_url);
   };
   const openGitHub = () => {
-    window.open(prj.pj_github, "_blank");
+    window.open(prj.pj_github);
   };
 
   useEffect(() => {

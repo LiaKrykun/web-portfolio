@@ -34,6 +34,9 @@
     color:  rgb(41, 99, 181);
 }
 @media(max-width:768px){
+    .footer-top-left p{
+    text-align: center;
+}
     .footer{
         align-items: center;
         padding: 2rem 8rem 5rem;
