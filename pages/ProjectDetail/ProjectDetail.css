@@ -37,7 +37,7 @@
 .prj-page-btns button{
     padding: 1rem 2rem;
     border-radius: 50px;
-    background-color: rgba(74, 74, 74, 0.294);
+    background-color: var(--btn-color);
     border: none;
     color: white;
     cursor: pointer;
@@ -48,7 +48,7 @@
 }
 
 .prj-page-btns button:hover{
-   background: linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+   background: var(--btn-hover);
 }
 
 @media(max-width:768px){

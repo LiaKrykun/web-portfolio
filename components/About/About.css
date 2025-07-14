@@ -58,7 +58,7 @@
     width: 50%;
     height: .7rem;
     border-radius: 50px;
-    background: linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+    background: var(--btn-hover);
 }
 
 .skill:hover{
@@ -66,7 +66,7 @@
     transition: .3s;
 }
 .resume-btn{
-    background-color: rgba(74, 74, 74, 0.294);
+    background-color: var(--btn-color);
     color: rgb(255, 255, 255);
     padding: 1rem 4rem;
     border: none;
@@ -77,7 +77,7 @@
 }
 
 .resume-btn:hover{
-    background: linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+    background: var(--btn-hover);
 }
 
 @media(max-width:768px){

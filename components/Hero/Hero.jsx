@@ -9,8 +9,12 @@ function Hero() {
       <div className="hero-text">
         <h1>hi! my name is Lia Krykun</h1>
         <GradientText className="custom-class">
-          <p>Front-End</p>
-          <p>Web Developer</p>
+          <div>
+            <span>Front-End</span>
+          </div>
+          <div>
+            <span>Web Developer</span>
+          </div>
         </GradientText>
       </div>
       <div className="hero-action">
