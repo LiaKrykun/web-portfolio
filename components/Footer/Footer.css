@@ -31,7 +31,7 @@
 }
 .social-icon svg:hover{
     scale: 1.1;
-    color:  rgb(41, 99, 181);
+    color: rgb(83, 108, 207);
 }
 @media(max-width:768px){
     .footer-top-left p{

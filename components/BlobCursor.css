@@ -14,8 +14,8 @@
   position: absolute;
   will-change: transform;
   border-radius: 50%;
-  background: rgb(191, 85, 28);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background: var(--cursor-color);
+  box-shadow: 10px 10px 5px 0px rgba(211, 201, 22, 0.75);
   opacity: 0.6;
 }
 
