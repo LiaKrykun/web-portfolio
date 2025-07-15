@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
           <p>Thank you for visiting my portfolio website!</p>
@@ -108,7 +108,7 @@ function Footer() {
       <div className="footer-bottom">
         <p>2025 Lia Krykun</p>
       </div>
-    </div>
+    </footer>
   );
 }
 

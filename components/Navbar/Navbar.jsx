@@ -21,7 +21,7 @@ function Navbar({ isDark }) {
     navigate("/" + hash);
   };
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link to="/">
         <img className="logo" src={isDark ? logoDark : logoLight} alt="logo" />
       </Link>
@@ -56,7 +56,7 @@ function Navbar({ isDark }) {
         >
           <BottomNavigationAction
             label="Home"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("#home")}
             icon={<HomeIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
           <BottomNavigationAction
@@ -80,7 +80,7 @@ function Navbar({ isDark }) {
           />
         </BottomNavigation>
       </div>
-    </div>
+    </nav>
   );
 }
 
