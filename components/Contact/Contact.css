@@ -33,7 +33,7 @@
 
 .contact-left p{
     max-width: 40rem;
-    color: rgb(1, 1, 60);
+    color: var(--text-color);
     font-size: 1.4rem;
     line-height: 2.2rem;
 }
@@ -52,7 +52,7 @@
 }
 
 .contact-right label{
-    color: rgb(1, 1, 60);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -87,19 +87,21 @@
     border: none;
     color: white;
     border-radius: 50px;
-    background-color: rgba(74, 74, 74, 0.294);
+    background-color: var(--btn-color)!important;
     font-size: 1.3rem;
-    padding: 1.1rem 2rem;
+    padding: 0!important;
     margin-bottom: 2rem;
     cursor: pointer;
     transition: .8s;
     text-transform: uppercase;
     cursor: pointer;
+    max-width: 15rem;
+    max-height: 3rem;
 }
 
 .contact-submit:hover{
     transition: .3s;
-    background:  linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+    background:  var(--btn-hover);
 
 }
 
@@ -137,7 +139,7 @@
 
 @media(max-width:440px){
     .contact-title{
-        margin-top: 3rem;
+        margin-top: 0;
     }
     .contact-right{
         margin: 2rem 0;

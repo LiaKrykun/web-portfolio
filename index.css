@@ -2,21 +2,63 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+  overflow-x: hidden;
+}
+:root{
+  --clouds-opacity:.2;
+  background-size: cover;
+  background: linear-gradient(
+  147deg,
+  rgba(51, 34, 164, 0.676) 0%,
+  rgba(76, 137, 181, 0.619) 25%,
+  rgba(159, 114, 84, 0.61) 50%,
+  rgba(192, 137, 143, 0.532) 75%,
+  rgba(83, 145, 187, 0.918) 100%);
+  --text-color: rgb(1, 1, 60);
+  --btn-color: rgba(74, 74, 74, 0.294);
+  --btn-hover: linear-gradient(157deg, rgb(93, 117, 211), rgb(179, 150, 131));
+  --cursor-color: rgb(206, 160, 114);
+}
+
+[data-theme="dark"]{
+  --clouds-opacity:.1;
+  background-image:
+    linear-gradient(
+      147deg,
+      rgb(0, 34, 58) 0%,
+      rgba(16, 13, 40, 0.676) 25%,
+      rgba(8, 36, 60, 0.965) 50%,
+      rgba(41, 39, 30, 0.852) 75%,
+      rgba(9, 8, 20, 0.971) 100%
+    ),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEUAAAD///+l2Z/dAAAACklEQVR4XmNgAAAAAgABSK+kcQAAAABJRU5ErkJggg==");
+  background-size: cover, cover;
+  background-blend-mode: normal, overlay;
+  --text-color: rgb(234, 234, 253);
+  --btn-color: #444a64;
+  --btn-hover: linear-gradient(197deg, rgb(71, 74, 87), rgb(19, 30, 37));
+  --cursor-color: #f7f2e5;
+}
 
 body{
   position: relative;
   height: 100%;
+  min-height: 100vh;
   overscroll-behavior: none;
-  background-image: linear-gradient(167deg, rgba(34, 110, 164, 0.34), rgba(250, 212, 237, 0.2)),url('./assets/sky-bg.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: rgb(1, 1, 60);
+  color: var(--text-color);
   font-family: Lora;
+  transition: background 0.6s ease;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+  color: var(--text-color);
 }
 
 a{
-  color: rgb(1, 1, 60);
+  color: var(--text-color);
   text-decoration: none;
 }
 

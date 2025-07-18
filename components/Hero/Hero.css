@@ -5,15 +5,21 @@
     flex-direction: column;
     gap: 3rem;
     height: 90vh;
+    position: relative;
+    overflow: hidden;
 }
-
 .hero h1{
     text-align: center;
     font-size: 2rem;
     font-weight: 200;
 }
-
-.hero p{
+.custom-class div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero span{
     font-size: 9rem;
     text-align: center;
     text-transform: uppercase;
@@ -28,7 +34,7 @@
 .hero-projects a{
     padding: 1rem 2rem;
     border-radius: 50px;
-    background-color: rgba(74, 74, 74, 0.294);
+    background-color: var(--btn-color);
     color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -37,7 +43,7 @@
     transition: .8s;
 }
 .hero-projects a:hover{
-    background:  linear-gradient(157deg, rgb(75, 111, 255), rgb(210, 146, 188));
+    background:  var(--btn-hover);
     transition: .5s;
 }
 
@@ -49,7 +55,7 @@
     .hero h1{
         font-size:1.5rem;
     }
-    .hero p{
+    .hero span{
         font-size:4rem;
         line-height: 4rem;
     }
@@ -60,13 +66,13 @@
 
 @media(max-width:420px){
     .hero{
-        padding: 2rem 0 10rem;
-        height: 80vh;
+        padding: 1rem 0 10rem;
+        height: 60vh;
     }
     .hero h1{
         font-size:1.3rem;
     }
-    .hero p{
+    .hero span{
         font-size:3rem;
         line-height: 3rem;
     }

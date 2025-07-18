@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
@@ -10,29 +10,36 @@ import HomeIcon from "@mui/icons-material/Home";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import logoLight from "../../assets/logo.png";
+import logoDark from "../../assets/logo-dark.png";
 
-function Navbar() {
+function Navbar({ isDark }) {
   const [value, setValue] = React.useState(0);
+  const navigate = useNavigate();
+
+  const handleNavClick = (hash) => {
+    navigate("/" + hash);
+  };
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link to="/">
-        <img className="logo" src={logo} alt="logo" />
+        <img className="logo" src={isDark ? logoDark : logoLight} alt="logo" />
       </Link>
       <ul className="nav-menu">
         <li>
-          <AnchorLink className="anchor-link" href="#about">
+          <Link className="anchor-link" to="/#about">
             About
-          </AnchorLink>
+          </Link>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#projects">
+          <Link className="anchor-link" to="/#projects">
             Projects
-          </AnchorLink>
+          </Link>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#contact">
+          <Link className="anchor-link" to="/#contact">
             Contact
-          </AnchorLink>
+          </Link>
         </li>
       </ul>
       <div className="bottom-navigation">
@@ -49,14 +56,17 @@ function Navbar() {
         >
           <BottomNavigationAction
             label="Home"
+            onClick={() => navigate("#home")}
             icon={<HomeIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
           <BottomNavigationAction
             label="About"
+            onClick={() => handleNavClick("#about")}
             icon={<AccountCircleIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
           <BottomNavigationAction
             label="Projects"
+            onClick={() => handleNavClick("#projects")}
             icon={
               <BusinessCenterRoundedIcon
                 sx={{ fontSize: 28, color: "#ffffff" }}
@@ -65,11 +75,12 @@ function Navbar() {
           />
           <BottomNavigationAction
             label="Contact"
+            onClick={() => handleNavClick("#contact")}
             icon={<TelegramIcon sx={{ fontSize: 28, color: "#ffffff" }} />}
           />
         </BottomNavigation>
       </div>
-    </div>
+    </nav>
   );
 }
 

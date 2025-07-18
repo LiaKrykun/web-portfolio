@@ -5,8 +5,8 @@ import project3_img from "../assets/delivery-screenshot.png";
 const projects = [
   {
     pj_num: 1,
-    pr_url: "thekrykun.com/mrmovich",
-    pr_github: "https://github.com/LiaKrykun/ukraine-website",
+    pj_url: "https://thekrykun.com/mrmovich",
+    pj_github: "https://github.com/LiaKrykun/mrmovich",
     pj_name: "Movie Database",
     pj_img: project1_img,
     pj_overview:
@@ -18,11 +18,17 @@ const projects = [
     pj_num: 2,
     pj_name: "Capstone project",
     pj_img: project2_img,
+    pj_overview: "Still coming...",
+    pj_time: "Still coming...",
+    pj_stack: "Still coming...",
   },
   {
     pj_num: 3,
     pj_name: "Delivery Service Website",
     pj_img: project3_img,
+    pj_overview: "Still coming...",
+    pj_time: "Still coming...",
+    pj_stack: "Still coming...",
   },
 ];
 
