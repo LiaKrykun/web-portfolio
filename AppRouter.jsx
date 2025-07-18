@@ -10,7 +10,8 @@ import { useState } from "react";
 import { Toggle } from "./components/Toggle/Toggle";
 import useLocalStorage from "use-local-storage";
 import Home from "./pages/Home/Home";
-import BlobCursor from "./components/BlobCursor";
+import BlobCursor from "./components/BlobCursor/BlobCursor";
+import Clouds from "./components/Clouds/Clouds";
 
 function App() {
   const preference = window.matchMedia("(prefers-color:scheme:dark)").matches;
@@ -18,6 +19,7 @@ function App() {
   return (
     <div data-theme={isDark ? "dark" : "light"}>
       <Router>
+        <Clouds />
         <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
         <BlobCursor />
         <Navbar isDark={isDark} />

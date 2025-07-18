@@ -9,6 +9,8 @@
 
 .logo{
     max-width: 4vw;
+    z-index: 1;
+    cursor: pointer;
 }
 .bottom-navigation{
     display: none;
@@ -20,6 +22,7 @@
     list-style: none;
     gap: 3rem;
     font-size: 1.3rem;
+    z-index: 1;
 }
 
 .anchor-link{
@@ -31,7 +34,7 @@
 
 .anchor-link:active,
 .anchor-link:hover{
-    border-bottom: 3px solid var(--text-color);
+    border-bottom: 2.5px solid var(--text-color);
 }
 
 @media(max-width:768px){

@@ -10,8 +10,8 @@ const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 // Helper lerp function for easing
 const lerp = (start, end, amt) => start + (end - start) * amt;
 
-const OFFSET_X = 30; // offset right of cursor
-const OFFSET_Y = -20; // offset above cursor
+const OFFSET_X = 80; // offset right of cursor
+const OFFSET_Y = 90; // offset above cursor
 const STOP_DISTANCE = 5; // minimum distance to stop near cursor
 
 const BlobCursor = ({ blobType = "circle", fillColor = "#fegefe" }) => {

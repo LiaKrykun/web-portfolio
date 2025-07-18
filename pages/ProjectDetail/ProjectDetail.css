@@ -8,6 +8,7 @@
 }
 .prj-page-container h2{
     font-size: 3rem;
+    z-index: 1;
 }
 
 .pj-container{
@@ -16,6 +17,7 @@
     align-items: flex-start;
     max-width: 65vw;
     gap: 5vw;
+    z-index: 1;
 }
 
 .prj-page-img{
@@ -32,6 +34,7 @@
 .prj-page-btns{
     display: flex;
     gap: 2rem;
+    z-index: 1;
 }
 
 .prj-page-btns button{

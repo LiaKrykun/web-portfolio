@@ -22,7 +22,6 @@ function About() {
               apply creativity and visual storytelling to build clear and
               user-centered digital experiences.
             </p>
-
             <Magnet padding={50} disabled={false} magnetStrength={50}>
               <a href="/files/resume.pdf" download className="resume">
                 <button className="resume-btn">Resume</button>

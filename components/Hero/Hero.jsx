@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import GradientText from "../GradientText/GradientText";
+import Magnet from "../Magnet/Magnet";
 
 function Hero() {
   return (
@@ -19,7 +20,9 @@ function Hero() {
       </div>
       <div className="hero-action">
         <div className="hero-projects">
-          <AnchorLink href="#projects">My projects</AnchorLink>
+          <Magnet padding={50} disabled={false} magnetStrength={50}>
+            <AnchorLink href="#projects">My projects</AnchorLink>
+          </Magnet>
         </div>
       </div>
     </div>

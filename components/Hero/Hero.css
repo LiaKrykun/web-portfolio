@@ -5,6 +5,8 @@
     flex-direction: column;
     gap: 3rem;
     height: 90vh;
+    position: relative;
+    overflow: hidden;
 }
 .hero h1{
     text-align: center;
