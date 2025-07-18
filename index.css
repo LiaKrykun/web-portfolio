@@ -18,6 +18,7 @@ html, body {
   --text-color: rgb(1, 1, 60);
   --btn-color: rgba(74, 74, 74, 0.294);
   --btn-hover: linear-gradient(157deg, rgb(93, 117, 211), rgb(179, 150, 131));
+  --prj-color: #c59885;
   --cursor-color: rgb(206, 160, 114);
 }
 
@@ -38,6 +39,7 @@ html, body {
   --text-color: rgb(234, 234, 253);
   --btn-color: #444a64;
   --btn-hover: linear-gradient(197deg, rgb(71, 74, 87), rgb(19, 30, 37));
+  --prj-color: #48577a;
   --cursor-color: #f7f2e5;
 }
 

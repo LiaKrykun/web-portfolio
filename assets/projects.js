@@ -24,7 +24,7 @@ const projects = [
   },
   {
     pj_num: 3,
-    pj_name: "Delivery Service Website",
+    pj_name: "Delivery Service",
     pj_img: project3_img,
     pj_overview: "Still coming...",
     pj_time: "Still coming...",
