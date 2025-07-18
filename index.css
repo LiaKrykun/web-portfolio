@@ -8,15 +8,13 @@ html, body {
 :root{
   --clouds-opacity:.2;
   background-size: cover;
-  --background: linear-gradient(
+  background: linear-gradient(
   147deg,
   rgba(51, 34, 164, 0.676) 0%,
   rgba(76, 137, 181, 0.619) 25%,
   rgba(159, 114, 84, 0.61) 50%,
   rgba(192, 137, 143, 0.532) 75%,
-  rgba(83, 145, 187, 0.918) 100%
-);
-
+  rgba(83, 145, 187, 0.918) 100%);
   --text-color: rgb(1, 1, 60);
   --btn-color: rgba(74, 74, 74, 0.294);
   --btn-hover: linear-gradient(157deg, rgb(93, 117, 211), rgb(179, 150, 131));
@@ -48,7 +46,6 @@ body{
   height: 100%;
   min-height: 100vh;
   overscroll-behavior: none;
-  background: var(--background);
   background-repeat: no-repeat;
   background-position: center center;
   color: var(--text-color);
